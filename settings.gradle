@@ -1,2 +1,7 @@
 rootProject.name = 'crystal'
-
+include 'crystal-common'
+include 'crystal-user-service'
+include 'crystal-product-service'
+include 'crystal-order-service'
+include 'crystal-coupon-service'
+include 'crystal-gateway'

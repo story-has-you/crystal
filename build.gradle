@@ -17,6 +17,15 @@ version = '1.0.0-SNAPSHOT'
 /*第三方依赖等jar包定义*/
 ext {
 
+    lib = [
+            "mybatis-plus"   : "com.baomidou:mybatis-plus-boot-starter:3.5.1",
+            "knife4j"        : "com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3",
+            "jjwt-api"       : "io.jsonwebtoken:jjwt-api:0.11.2",
+            "jjwt-impl"      : "io.jsonwebtoken:jjwt-impl:0.11.2",
+            "jjwt-jackson"   : "io.jsonwebtoken:jjwt-jackson:0.11.2",
+            'blades-of-chaos': "com.storyhasyou.kratos:blades-of-chaos:2.9.7",
+    ]
+
 }
 
 subprojects {
@@ -34,6 +43,20 @@ subprojects {
         maven { url "https://maven.aliyun.com/nexus/content/groups/public/" }
         maven {
             url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '5f620e5dfa82bfeb807491ec'
+                password 'NPVJH5zaSk)d'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2099844-release-pXeqHB/'
+        }
+        maven {
+            credentials {
+                username '5f620e5dfa82bfeb807491ec'
+                password 'NPVJH5zaSk)d'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2099844-snapshot-sX2LEd/'
         }
     }
 

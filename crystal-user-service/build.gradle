@@ -4,4 +4,5 @@ dependencies {
     implementation "${lib.'blades-of-chaos'}"
     implementation project(':crystal-common')
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'mysql:mysql-connector-java'
 }

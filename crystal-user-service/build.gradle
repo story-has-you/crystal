@@ -1,3 +1,7 @@
 dependencies {
-
+    implementation "${lib.'mybatis-plus'}"
+    implementation "${lib.'knife4j'}"
+    implementation "${lib.'blades-of-chaos'}"
+    implementation project(':crystal-common')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 }

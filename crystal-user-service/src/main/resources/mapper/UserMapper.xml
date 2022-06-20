@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.storyhasyou.crystal.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.storyhasyou.crystal.entity.User">
+        <!--@mbg.generated-->
+        <!--@Table `user`-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="slogan" jdbcType="VARCHAR" property="slogan"/>
+        <result column="gender" jdbcType="BOOLEAN" property="gender"/>
+        <result column="points" jdbcType="INTEGER" property="points"/>
+        <result column="mail" jdbcType="VARCHAR" property="mail"/>
+        <result column="secret" jdbcType="VARCHAR" property="secret"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, `name`, `password`, avatar, slogan, gender, points, mail, secret, create_time,
+        update_time
+    </sql>
+</mapper>

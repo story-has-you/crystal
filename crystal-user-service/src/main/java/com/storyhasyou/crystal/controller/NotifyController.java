@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -29,7 +28,7 @@ public class NotifyController {
     private RedisService redisService;
 
     @GetMapping("/captcha")
-    public void captcha(HttpServletRequest request, HttpServletResponse response) {
+    public void captcha(HttpServletResponse response) {
         try {
             String text = defaultKaptcha.createText();
             redisService.setCaptcha(text);

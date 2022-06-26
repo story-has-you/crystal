@@ -1,7 +1,9 @@
 dependencies {
     implementation "${lib.'mybatis-plus'}"
     implementation "${lib.'blades-of-chaos'}"
+    implementation "${lib.'kaptcah'}"
     implementation project(':crystal-common')
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     runtimeOnly 'mysql:mysql-connector-java'
 }
